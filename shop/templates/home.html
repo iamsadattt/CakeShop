@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Sadat Samin" />
+    <meta name="keywords" content="Sadat Samin, portfolio, developer, student, CSE" />
+    <meta name="description" content="Personal Portfolio Website of Sadat Samin" />
+    <title>Sadat Samin</title>
+
+    <!-- CDN Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span style="color: white; font-weight: bold; font-size: 24px">CreativeHands</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="ion-navicon"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link smooth-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link smooth-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link smooth-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-overlay" id="hero" style="background-image: url('{% static 'css/sunset.jpg' %}');">
+      <div class="text py-5">
+        <h1>Hello! I am <span class="bold">Sadat Samin</span></h1>
+        <p>Aspiring developer, learning one step at a time.</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="padding" id="about">
+      <div class="container">
+        <h2 class="section-title text-center">About Me</h2>
+        <p class="section-lead text-center text-muted">Get to know me better</p>
+        <div class="section-body">
+          <div class="row mb-4">
+            <div class="col-12 col-md-8">
+              <p>Hello! I'm Sadat Samin, a passionate Computer Science and Engineering student at the University of Asia Pacific. I'm dedicated to learning and exploring various aspects of technology, particularly in software development and problem-solving.</p>
+              <p>I believe in constant growth and learning. My academic journey has equipped me with strong analytical skills and a solid foundation in various programming languages and concepts.</p>
+              <p>I'm enthusiastic about applying my knowledge to real-world problems and contributing to innovative solutions. I enjoy collaborating with others and am always open to new challenges and opportunities.</p>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                <img src="{% static 'css/20250218_202650.jpg' %}" alt="Sadat Samin" class="img-fluid rounded shadow" style="width: 300px; height: 300px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="padding bg-grey" id="contact">
+      <div class="container">
+        <h2 class="section-title text-center">Contact Me</h2>
+        <p class="section-lead text-center text-muted">Get in touch for collaborations, opportunities, or just to say hello</p>
+        <div class="section-body">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <p class="contact-text">Feel free to reach out! I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+              <div class="contact-info-container d-flex flex-column align-items-center">
+                <ul class="contact-icon">
+                  <li><i class="ion ion-ios-telephone"></i><div>+880 132 656 0907</div></li>
+                  <li><i class="ion ion-ios-email"></i><div>md.sadatsamin@gmail.com</div></li>
+                  <li><i class="ion ion-ios-location"></i><div>Dhaka, Bangladesh</div></li>
+                </ul>
+              </div>
+              <div class="social-media mt-4">
+                <a href="https://www.facebook.com/sadat.sam1n" class="ion ion-social-facebook" title="Facebook"></a>
+                <a href="https://github.com/iamsadattt" class="ion ion-social-github" title="GitHub"></a>
+                <a href="https://www.linkedin.com/in/sadat-samin-973127312/" class="ion ion-social-linkedin" title="LinkedIn"></a>
+                <a href="mailto:md.sadatsamin@gmail.com" class="ion ion-ios-email-outline" title="Email Me"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 10px 0;">
+      <div class="container">
+        <p>Copyright &copy; 2025 Sadat Samin. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/home.js' %}"></script>
+  </body>
+</html>
